@@ -1,0 +1,128 @@
+.close {
+    color: white;
+    font-family: "Permanent Marker";
+    font-size: 100%;
+}
+
+
+/****************** MAsonary photo Gallery **********************/
+
+.masonary-holder {
+    column-count: 3;
+    column-gap: 30px;
+    padding: 50px;
+    margin: 20px;
+}
+
+.masonary-block {
+    display: inline-block;
+    width: 100%;
+    margin: 15px 0 15px;
+    box-sizing: border-box;
+
+}
+
+.masonary-block img {
+    width: 100%;
+    border-radius: 2%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: block;
+    margin: 0px auto 0px auto;
+    filter: drop-shadow(-10px 10px 4px #202020);
+}
+
+
+img.hoverImage:hover {
+    transform: scale(1.15);
+    transition: 0.5s ease;
+    position: relative;
+    z-index: 500;
+}
+
+.masonary-block:hover {
+    transform: scale(1.15);
+    position: relative;
+    z-index: 98;
+}
+
+
+/******************** Modal**************************/
+#gallery .carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: scale-down;
+    /* background: black; */
+}
+
+.modal-content {
+    background-color: transparent;
+    border: none;
+}
+
+.modal-header {
+    border-bottom: none;
+    background: var(--purple);
+}
+
+.modal-header .close {
+    padding: 1rem;
+}
+
+
+
+.modal-body {
+    padding: 0px;
+    background: black;
+}
+
+
+.carousel .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+
+
+#gallery span {
+    padding-left: 1%;
+    color: white;
+}
+
+
+@media screen and (max-width:400px) {
+    .masonary-holder {
+        column-count: 1;
+    }
+
+
+}
+
+@media (max-width:600px) and (min-width:401px) {
+    .masonary-holder {
+        column-count: 1;
+    }
+
+}
+
+
+
+@media (max-width:1079px) and (min-width:768px) {
+    .masonary-holder {
+        column-count: 2;
+    }
+
+}
+
+@media (min-width:1080px) {
+    .masonary-holder {
+        column-count: 3;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .masonary-holder {
+        column-count: 3;
+    }
+}

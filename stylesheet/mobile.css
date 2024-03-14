@@ -1,0 +1,280 @@
+@media (max-width:770px) {
+
+    section {
+        min-height: 80vh;
+    }
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .container {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+
+
+    div {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .section-header {
+        font-size: 12vw;
+    }
+
+    header {
+
+        position: sticky;
+
+        .navbar-brand img {
+            width: 50vw;
+        }
+
+        .nav-link {
+            font-size: 4vw;
+        }
+    }
+
+    #home {
+
+        min-height: 50vh;
+        padding: 5%;
+
+        span {
+            font-size: 4vw;
+        }
+
+        #home-first,
+        #home-second {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        #home-first div,
+        #home-second div {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+
+
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        #home-third {
+            flex-direction: column-reverse;
+
+        }
+
+        .introVideo:last-child {
+            margin: 20px 0;
+        }
+    }
+
+    #about {
+
+        .about-text {
+            font-size: 4vw;
+        }
+
+
+        img {
+            width: 90%;
+        }
+
+        .event-card {
+            width: 350px;
+        }
+
+        .about-wrapper .row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .about-wrapper .row:nth-child(even) {
+            flex-direction: column-reverse;
+        }
+
+        .about-row {
+            margin: 10vh 0;
+        }
+
+        .aboutImg img {
+            width: 100%;
+            scale: 1;
+            padding: 10px;
+        }
+
+        .aboutImg img:hover {
+            scale: 1;
+        }
+
+        .aboutHeading {
+            font-size: 6vw;
+            padding: 0 10px;
+        }
+
+        .aboutContent {
+            font-size: 4vw;
+            padding: 4px;
+        }
+
+        .card-wrapper {
+            padding: 2px;
+        }
+
+        .cardInfo {
+            font-size: 6vw;
+        }
+
+        .event-card {
+            width: 100%;
+            margin: 0;
+        }
+
+        .event-card:hover {
+            scale: 1;
+        }
+    }
+
+    #events {
+        .event-item-top {
+            flex-direction: column;
+        }
+
+        .event-item-top img {
+            width: 100%;
+            scale: 1;
+            border-radius: 10px;
+        }
+
+        .event-item-top span {
+            width: 100%;
+            font-size: 4vw;
+            margin: 20px 0 10px 0;
+        }
+
+        table,
+        th,
+        td {
+            padding: 0;
+            font-size: 4vw;
+        }
+
+    }
+
+    #gallery {
+
+        .container {
+            padding: 0px;
+        }
+
+        .masonary-holder {
+            padding: 5px;
+            column-count: 2;
+            column-gap: 5px;
+        }
+
+        .modal-body {
+            width: 100%;
+            height: 30vh;
+        }
+
+        .hoverImage {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .carousel-item img {
+            height: 25vh;
+        }
+
+        .masonary-block img {
+            padding: 10px;
+        }
+
+        .masonary-block img:hover {
+            scale: 1;
+        }
+    }
+
+    #contact {
+
+        .contact-card:hover {
+            box-shadow: 0 0 20px 5px purple;
+        }
+
+        ul {
+            list-style: none;
+            font-size: 5vw;
+        }
+
+
+        h5 {
+            font-size: 6vw;
+            letter-spacing: 5px;
+            margin: 20px 0 10px 0;
+            color: black;
+            /* font-weight: bold; */
+        }
+
+        h2 {
+            font-size: 8vw;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .contact-container {
+            grid-template-columns: auto;
+        }
+
+        marquee {
+            font-size: 4vw;
+
+        }
+
+
+    }
+
+    #register {
+        .search-input {
+            padding: 10px 5px 10px 10px;
+            font-size: 5vw;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .register-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            color: black;
+            padding: 10px;
+        }
+
+        .register-card:hover {
+            transform: scale(1);
+        }
+
+        .register-card button {
+            padding: 2px;
+            font-size: 6vw;
+        }
+
+        .register-card-content p {
+            font-size: 4vw;
+        }
+    }
+}
